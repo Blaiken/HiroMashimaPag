@@ -1,0 +1,211 @@
+/* CUERPO PRINCIPAL */
+
+body {
+    font-family: 'Arial';
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://imgmedia.larepublica.pe/1200x630/larepublica/migration/images/PGZKZYND5NCLRJWKNI52W2EDIU.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 50%; /* Ajusta este valor según lo que necesites */
+    z-index: -1;
+}
+
+/* TITULO PRINCIPAL */
+
+.titulo-principal {
+    color: white;
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(206, 160, 75, 95%);
+    margin: 0;
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+.navbar {
+    background-color: #222;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* ESTILOS DEL MENÚ DESPLEGABLE */
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    width: 150px;
+}
+
+.submenu li {
+    margin: 5px 0;
+}
+
+.submenu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.submenu a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* TITULO DEL TEMA */
+
+.titulo-tema {
+    text-align: center;
+    color: white;
+    background-color: rgba(43, 43, 43, 80%);
+    padding: 10px;
+    margin: 15px auto;
+    width: 50%;
+    border-radius: 50px;
+}
+
+/* CONTENIDO */
+
+.contenido {
+    max-width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px;
+    background: rgb(255, 254, 254, 0.8);
+    border-radius: 10px;
+    display: flex;
+}
+
+/* INFORMACIÓN */
+
+.informacion {
+    font-size: 20px;
+}
+
+/* DIV IMAGEN */
+
+.img {
+    text-align: center;
+}
+
+/* IMAGEN */
+
+.mashima-img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.obra-img {
+    width: 200px;
+    border-radius: 5%;
+}
+
+.pyr-img {
+    border-radius: 5%;
+}
+
+/* LINKS */
+
+.contenedor-links {
+    width: 200px;
+    display: row;
+}
+
+.links {
+    text-decoration: none;
+    color: rgb(97, 97, 204);
+}
+
+a:hover {
+    color: red;
+}
+
+/* FOOTER */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+/* ADAPTACIÓN AL CELULAR */
+
+@media (width <= 720px) {
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 0;
+        transition: 0.3s;
+    }
+
+    #principales-obras {
+        color: whitesmoke;
+        padding: 8px;
+    }
+
+    .titulo-principal {
+      background-color: rgb(177, 82, 82);
+    }
+
+    .informacion {
+        font-size: 17px;
+    }
+    
+    .footer {
+        position: static;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+        padding: 0;
+    }
+  }
